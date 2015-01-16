@@ -4,7 +4,7 @@
 NetScreen
 ---------
 
-The info is in nsrpVsdMemberTable.
+The info is in `nsrpVsdMemberTable`.
 ```
  nsrpVsdMemberUnitId.0 = INTEGER: 7455360
  nsrpVsdMemberUnitId.1 = INTEGER: 7426176
@@ -51,7 +51,7 @@ For actual firmwares the info is in `sysCmFailoverStatusTable`.
  sysCmFailoverStatusSummary.0 = STRING: "4/5 active"
 ```
 
-We are retrieving `sysCmFailoverStatusId.0` and `sysCmFailoverStatusSummary.0`
+We are retrieving `sysCmFailoverStatusId.0` and `sysCmFailoverStatusSummary.0`  
 `sysCmFailoverStatusId` is defined as:
 ```
  0 | undefined
