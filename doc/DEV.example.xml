@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+
+<!-- all attributes are mandatory
+
+      cluster id - short desc tag of the cluster
+     device name - the sysname of the node
+              ip - the management IP of the node
+       community - the SNMPv2 read community
+          vendor - A10|F5|NetScreen supported only
+             oid - the enterprise part of sysObjectID
+-->
+
+<net>
+<devices>
+ <cluster id="A10 AX Cluster A">
+  <device name="cnode-A1" ip="A.B.C.1" community="secret" vendor="A10" oid="22610.1.3.8"/>
+  <device name="cnode-A2" ip="A.B.C.2" community="secret" vendor="A10" oid="22610.1.3.8"/>
+ </cluster>
+ <cluster id="A10 AX Cluster B">
+  <device name="cnode-B1" ip="A.B.C.5" community="secret" vendor="A10" oid="22610.1.3.8"/>
+  <device name="cnode-B2" ip="A.B.C.6" community="secret" vendor="A10" oid="22610.1.3.8"/>
+ </cluster>
+ <cluster id="F5 BIG-IP Cluster X">
+  <device name="cnode-X1" ip="A.B.C.7" community="secret" vendor="F5" oid="3375.2.1.3.4.22"/>
+  <device name="cnode-X1" ip="A.B.C.8" community="secret" vendor="F5" oid="3375.2.1.3.4.22"/>
+ </cluster>
+ <cluster id="NetScreen FW Cluster Y">
+  <device name="cnode-Y1" ip="A.B.C.3" community="secret" vendor="NetScreen" oid="3224.1.54"/>
+  <device name="cnode-Y1" ip="A.B.C.4" community="secret" vendor="NetScreen" oid="3224.1.54"/>
+ </cluster>
+
+ <!-- single instances are possible, too -->
+ <device name="snode-01" ip="A.B.C.11" community="secret" vendor="F5" oid="3375.2.1.3.4.22"/>
+ <device name="snode-02" ip="A.B.C.12" community="secret" vendor="A10" oid="22610.1.3.8"/>
+ <device name="snode-03" ip="A.B.C.13" community="secret" vendor="NetScreen" oid="3224.1.35"/>
+ <device name="snode-04" ip="A.B.C.14" community="secret" vendor="NetScreen" oid="3224.1.35"/>
+</devices>
+</net>
